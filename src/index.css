@@ -45,6 +45,14 @@ code {
 .item.muuri-item-hidden {
   z-index: 0;
 }
+.item.muuri-item-placeholder {
+  z-index: 2;
+  margin: 0;
+  opacity: 0.5;
+}
+.item.muuri-item-placeholder .item-content {
+  border-style: dashed;
+}
 .item.h2 {
   height: 210px;
   line-height: 210px;

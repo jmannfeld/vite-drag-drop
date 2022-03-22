@@ -13,7 +13,13 @@ const App = () => {
 
   return (
     <section className="grid-demo">
-      <MuuriComponent dragEnabled>{children}</MuuriComponent>
+      <MuuriComponent dragEnabled dragPlaceholder={{
+        enabled: true,
+        createElement: function (item) {
+          return item.getElement().cloneNode(true);
+        },
+      }}>{children}
+      </MuuriComponent>
     </section>
   );
 };

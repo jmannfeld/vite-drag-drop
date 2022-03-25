@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import ReactDom from 'react-dom';
 import { MuuriComponent, useDrag } from 'muuri-react';
 import { generateItems } from './utils';
-import './index.css';
+import { Badge, Box } from '@chakra-ui/react';
+import './App.css';
 
 // App.
 const App = () => {
@@ -38,7 +39,7 @@ const Item = ({ color, width, height, title }) => {
 
   return (
     <div className={`item h${height} w${width} ${color} ${shadow}`}>
-      <div className="item-content">{cardTitle}</div>
+      <Box className="item-content"></Box>
     </div>
   );
 };

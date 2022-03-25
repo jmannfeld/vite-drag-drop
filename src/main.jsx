@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import './index.css';
+import './App.css';
 import App from './App';
 
 // Extend the theme to include custom colors, fonts, etc
